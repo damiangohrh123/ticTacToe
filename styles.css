@@ -1,0 +1,116 @@
+:root {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+  --primary-color: rgb(42, 54, 70);
+  --secondary-color: rgb(255, 192, 74);
+  --red: rgb(230, 54, 54);
+  --blue: rgb(47, 140, 228);
+  
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tic {
+  font-size: 200px;
+}
+
+.tac {
+  font-size: 240px;
+}
+
+.toe {
+  font-size: 300px;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.gameBoard .gridElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--primary-color);
+}
+
+.gridElement {
+  font-size: 160px;
+}
+
+.gridElement:hover {
+  background-color: rgb(214, 241, 241);
+  cursor: pointer;
+}
+
+.colorRed {
+  color: var(--red);
+}
+
+.colorBlue {
+  color: var(--blue);
+}
+
+button {
+  padding: 20px 50px;
+
+  font-size: 100px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(228, 154, 57);
+}
+
+.gameBoardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.currentPlayer {
+  font-size: 60px;
+}
+
+.gameOverContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.gameOverMessage {
+  font-size: 150px;
+}
+
+.btnRestart {
+  display: none;
+  width: 600px;
+}

@@ -1,0 +1,4 @@
+1. Make a 3x3 grid
+2. Make the swaure selectable and indicate an 'X' if selected
+3. Make next selection an 'O'. Then back to 'X' again
+4. Make detection for 3 symbols in a row. Horizontal, vertical and diagonal
